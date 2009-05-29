@@ -2,10 +2,48 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
+  <title>Vladimír Bobeš Tužinský :: {{ page.name }}</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>bobes.github.com :: {{ page.title }}</title>
+  <meta name="description" content="{{ page.name }} {{ page.meta-description }}" />
+  <meta name="author" content="Vladimír Bobeš Tužinský" />
+  <meta name="keywords" content="{{ page.keywords }}" />
+  <style type="text/css">
+    body { font: 20px georgia, times, serif; line-height: 30px; text-align: center; background-color: black; color: white; }
+    body, div, li, h1, h2, p, ul { margin: 0; padding: 0; }
+    div#content { position: absolute; top: 0; left: 50%; margin: 0 0 0 -400px; width: 800px; }
+    div { margin: 0; padding: 1em 0; float: left; width: 800px; border-top: 1px solid #000; }
+    h1, h2 { padding-bottom: 0.5em; }
+    p.code { font: 25px courier; margin: 0 0 0 50px; text-align: left; }
+    em { font-style: italic; }
+    ul { list-style-type: none; }
+    a { color: white; }
+    a.twitthis { font-size: 0.8em; }
+    .d1 { background-color: #84002E; }
+    .d2 { background-color: #B80028; }
+    .d3 { background-color: #FF5B00; }
+    .d4 { background-color: #FFC200; }
+    .d5 { background-color: #4AC0F2; }
+    ul.links li { display: inline; margin: 0 5px; }
+  </style>
 </head>
 <body>
-  Pageholder
-</body>
+  <a href="http://github.com/bobes{{ page.forkme-page }}"><img style="position:absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
+  <div id="content">
+    {{ content }}
+  </div>
+  <script type="text/javascript" src="http://ajax.twitthis.com/chuug.twitthis.scripts/twitthis.js"></script>
+  <script type="text/javascript">
+    document.write('<div><a href="javascript:;" class="twitthis" onclick="TwitThis.pop();">TwitThis</a></div>');
+  </script>
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-1584061-6");
+    pageTracker._trackPageview();
+    } catch(err) {}
+  </script>
+  </body>
 </html>
